@@ -13,29 +13,35 @@
 <body>
     <div class="container">
         <header>
-            <h1>Quiz</h1>
+            <h2>Countries and Capitals Quiz</h2>
+            <p class="question">What is the capital of <span class="country">Indonesia</span>?</p>
         </header>
         <main>
             <div class="sub-container">
-                <form class="">
-                    <div class="questions">
-                        <input type="radio" name="questions" id="q1"><label for="q1">question one test</label></input><br />
-                        <input type="radio" name="questions" id="q2"><label for="q2">question two test</label></input><br />
-                        <input type="radio" name="questions" id="q3"><label for="q3">question three test</label></input><br />
-                        <input type="radio" name="questions" id="q4"><label for="q4">question four test</label></input>
+                <form id="quiz-form">
+                    <div class="answers">
+                        <input type="radio" name="answers" id="a1">
+                            <label for="a1" class="a1">Kuala Lumpur</label></input><br />
+                        <input type="radio" name="answers" id="a2">
+                            <label for="a2" class="a2">Jakarta</label></input><br />
+                        <input type="radio" name="answers" id="a3">
+                            <label for="a3" class="a3">Bogota</label></input><br />
+                        <input type="radio" name="answers" id="a4">
+                            <label for="a4" class="a4">Cape Town</label></input>
                     </div>
-                <div class="button">
-                    <button type="submit">submit</button>
-                </div>
-            </form>
+                    <div class="button">
+                        <button type="submit">submit</button>
+                        <button type="button" id="next">next</button>
+                    </div>
+                </form>
             </div>
         </main>
-        <footer class="">
+        <footer>
             <div class="sub-container">
                 <div class="player-info">
-                    <span class="">Question: 3 of 10</span><br />
-                    <span class="">Answered correct: 1</span><br />
-                    <span class="">Answered wrong: 1</span>
+                    <span>Question: <span class="current-question">3</span> of 10</span><br />
+                    <span>Correct: <span class="correct-score">1</span></span><br />
+                    <span>Incorrect: <span class="incorrect-score">1</span></span>
                 </div>
             </div>
         </footer>
