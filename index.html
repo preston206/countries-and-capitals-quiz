@@ -14,24 +14,24 @@
     <div class="container">
         <header>
             <h2>Countries and Capitals Quiz</h2>
-            <p class="question">What is the capital of <span class="country">Indonesia</span>?</p>
+            <p class="question"></p>
         </header>
         <main>
             <div class="sub-container">
                 <form id="quiz-form">
                     <div class="answers">
-                        <input type="radio" name="answers" id="a1">
-                            <label for="a1" class="a1">Kuala Lumpur</label></input><br />
-                        <input type="radio" name="answers" id="a2">
-                            <label for="a2" class="a2">Jakarta</label></input><br />
-                        <input type="radio" name="answers" id="a3">
-                            <label for="a3" class="a3">Bogota</label></input><br />
-                        <input type="radio" name="answers" id="a4">
-                            <label for="a4" class="a4">Cape Town</label></input>
+                        <!--<input type="radio" name="answers" id="a1"></input>
+                        <label for="a1" class="a1">Kuala Lumpur</label><br />
+                        <input type="radio" name="answers" id="a2"></input>
+                        <label for="a2" class="a2">Jakarta</label><br />
+                        <input type="radio" name="answers" id="a3"></input>
+                        <label for="a3" class="a3">Bogota</label><br />
+                        <input type="radio" name="answers" id="a4"></input>
+                        <label for="a4" class="a4">Cape Town</label>-->
                     </div>
                     <div class="button">
-                        <button type="submit">submit</button>
-                        <button type="button" id="next">next</button>
+                        <button type="submit" class="submitBtn">start</button>
+                        <button type="button" class="nextBtn" disabled>next</button>
                     </div>
                 </form>
             </div>
@@ -39,13 +39,16 @@
         <footer>
             <div class="sub-container">
                 <div class="player-info">
-                    <span>Question: <span class="current-question">3</span> of 10</span><br />
-                    <span>Correct: <span class="correct-score">1</span></span><br />
-                    <span>Incorrect: <span class="incorrect-score">1</span></span>
+                    <span>Question: <span class="current-question">0</span> of 10</span><br />
+                    <span>Correct: <span class="correct-score">0</span></span><br />
+                    <span>Incorrect: <span class="incorrect-score">0</span></span>
                 </div>
             </div>
         </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
